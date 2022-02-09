@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 254684619}
   - component: {fileID: 254684618}
+  - component: {fileID: 254684620}
   m_Layer: 0
   m_Name: ChangeColor
   m_TagString: Untagged
@@ -150,11 +151,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 353a91686ed4c004ca9e47d025417e52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textR: {fileID: 1813291455}
-  textG: {fileID: 1284269082}
-  textB: {fileID: 1068817105}
-  plus: {fileID: 2022805649}
-  minus: {fileID: 414117860}
+  _textR: {fileID: 1813291455}
+  _textG: {fileID: 1284269082}
+  _textB: {fileID: 1068817105}
+  _plus: {fileID: 2022805649}
+  _minus: {fileID: 414117860}
   _slider: {fileID: 932251269}
 --- !u!4 &254684619
 Transform:
@@ -170,6 +171,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &254684620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254684617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e070f8c7d1c9a5842b20a5b8b8c1325f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "_\u0441olorChange": {fileID: 254684618}
 --- !u!1 &414117858
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +440,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 254684618}
+        - m_Target: {fileID: 254684620}
           m_MethodName: SetImage
           m_Mode: 2
           m_Arguments:
@@ -449,7 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e479191273247443b05913661d76a99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 424531187}
+  _image: {fileID: 424531187}
 --- !u!1 &685328841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,7 +1185,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 254684618}
+        - m_Target: {fileID: 254684620}
           m_MethodName: SetImage
           m_Mode: 2
           m_Arguments:
@@ -1473,7 +1487,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 254684618}
+        - m_Target: {fileID: 254684620}
           m_MethodName: SetObject
           m_Mode: 2
           m_Arguments:
@@ -1650,7 +1664,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 254684618}
+        - m_Target: {fileID: 254684620}
           m_MethodName: SetImage
           m_Mode: 2
           m_Arguments:
