@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
-
+/// <summary>
+/// Перемещение картинки.
+/// </summary>
 public class MoveImage : MonoBehaviour
 {
     [SerializeField] private Image _image;
